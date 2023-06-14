@@ -7,18 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="general"></div>
-    <section>
-    <center><h1>Tareas por hacer</h1></center>
-   <input type="text"  id="tarea">
-    <button id="agregar"class="btn1">Agregar</button>
 
-    <div class="contenedor">
+<div class="contenedor">
+   <div class="cabecera">
+         <center><h1>Tareas por hacer</h1></center>
+   </div>
+ <form action="formulario">
+      <input type="text" name="task" id="tarea" class="form-control" autocomplete="off"
+      data-form-input="" placeholder="Ingresar tarea" >
+ </form>
+    <button id="agregar"class="Btn1">Agregar</button>
+</div>
+<section>
+    <form action=""> 
     <h3>Tareas Completadas
       <span id="cantidad">0</span> </h3> 
-    <ul id="listado">
+    <ul id="listado" class="list-group">
     </ul>
-</div
+</section>
+
 >
     </section>    
     <script src="main.js"></script>
