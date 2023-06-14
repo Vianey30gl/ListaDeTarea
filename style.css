@@ -1,5 +1,5 @@
 body{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     background: #ffffff;
     display: inline;
     align-items: center;
@@ -13,9 +13,27 @@ body{
     color: rgb(255, 255, 255);
     border: 0px;
     padding: 10px 45px ;
+  
 }
 
 .contenedor {
- width: 250px;
- margin-left: 0px;
+background: #ffffff;
+overflow: hidden;
+max-width: 100%;
 }
+
+
+.cabecera{
+    background: rgb(246, 246, 246);
+}
+.list-group{
+    width: 100%;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 15px 0;
+    overflow: hidden;
+    padding: 0;
+    box-shadow: 5px 5px 10px 5px rgb(255, 255, 255);
+
+}
+
