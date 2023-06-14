@@ -11,24 +11,32 @@ btn.addEventListener("click",function(e) {
 let valInpi= inputTarea.value
 
 let elementolista = document.createElement("li")
+let botonEliminar=document.createElement("Button")
+botonEliminar.setAttribute("Type","text")
+botonEliminar.id="BotonEli"
+botonEliminar.textContent="Eliminar"
+
 
 
 let parrafo=document.createTextNode(valInpi)
 elementolista.appendChild(parrafo)
-console.log(elementolista)
+
 
 listado.appendChild(elementolista)
+listado.appendChild(botonEliminar)
+
 
 })
-function BotonBorrar() {
-    let borrar = document.createElement("Botton")
+function BtnBorrar(){
+    const delBtn = document.createElement("button");
+    delBtn.textContent = "borrar";
+    delBtn.className = "btn-del";
+  delBtn.addEventListener("click", (e) =>{
+    const item = e.target.parentElement;
+    ul.removechild(item);
+ 
+  });
+   return delBtn;
+   }
 
-    borrar.textContent = "X";
-    borrar.classname = "btn-borrar";
 
-    borrar.addEventListener("click", function(e) {
-        const item = e.target.parentElement
-        elementolistab.removeChild(item);
-    });
-    return borrar;
-}
